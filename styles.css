@@ -65,6 +65,26 @@ img[alt="Sun"] {
   margin-top: 20px;
 }
 
+img[alt="Sun"] {
+  animation: circle 5s linear infinite;
+  transform-origin: 50% 200px;
+}
+
+@keyframes circle {
+    from { transform:rotate(-10deg); }
+    to { transform:rotate(10deg); }
+}
+
+img[alt="Moon"] {
+  animation: circle2 5s linear infinite;
+  transform-origin: 50% 200px;
+}
+
+@keyframes circle2 {
+    from { transform:rotate(10deg); }
+    to { transform:rotate(-10deg); }
+}
+
 input, button {
   appearance: none;
   border: none;
