@@ -10,7 +10,7 @@ window.addEventListener('load', () => {
   form.addEventListener('submit', (e) => {
 
     // No page reload
-    e.preventDefault()
+    e.preventDefault();
 
     // Value from input
     const task = input.value;
