@@ -1,99 +1,48 @@
-# Frontend Mentor - Todo app
+# My ToDo List
 
-![Design preview for the Todo app coding challenge](./design/desktop-preview.jpg)
+<img src="https://user-images.githubusercontent.com/58802893/230598907-91940c08-2fc9-4bc7-9aba-7301578da023.png" width="500" height="140" />
 
-## Welcome! 👋
+### Why Todo list? ❓ ❓
 
-Thanks for checking out this front-end coding challenge.
+I know that the Todo List app is very popular but I am a person who likes to have an organized space and my. So I thought I'd write my own Todo List app and use it personally, and maybe to help others sort out their daily schedules.
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+The project is based on the challenge from [Frontend Mentor](https://www.frontendmentor.io/) app which helped me improve my coding skills by building realistic projects. I have chosen the 'Todo app (INTERMEDIATE)' application, created in HTML, CSS and Java Script.
 
-**To do this challenge, you need a good understanding of HTML, CSS and JavaScript.**
+This is very cool 👌  because it doen't provide a solution or code on how the application should be written. You have to build out and get it looking as close to the design they give you as possible. You can use the tools which you like to complete the challenge. You also are able to add some of your own suggestions of the code. 
 
-## The challenge
+### How do i start the project? 🧐
 
-Your challenge is to build out this todo app and get it looking as close to the design as possible.
+* Before writing any code, I went through the project to start planning how to deal with it. This step helped me think ahead about CSS classes to create, for example, reusable styles.
+* I wrote HTML structure and organized, which helped me focus more on creating well-structured content.
+* I moved on to styling in CSS, including general content styles.
+* then I went back to HTML to come up with this code that displays the task list
+* I moved on to writing Java Script and all the functionality of this application
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+### How is it work? 🤔
 
-Your users should be able to:
+1. Input and button are displayed on the main page (you can see it in the picture above).
 
-- View the optimal layout for the app depending on their device's screen size
-- See hover states for all interactive elements on the page
-- Add new todos to the list
-- Mark todos as complete
-- Delete todos from the list
-- Filter by all/active/complete todos
-- Clear all completed todos
-- Toggle light and dark mode
-- **Bonus**: Drag and drop to reorder items on the list
+2. After entering the value in input and clicking the button, the value (todo list) will be displayed below.
 
-Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
+<img src="https://user-images.githubusercontent.com/58802893/230600712-f63a1f6a-973b-4e97-bc33-bbb24b59e3af.png" width="500" height="220" />
 
-## Where to find everything
+3. Each time we can add a new task to be done.
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
+<img src="https://user-images.githubusercontent.com/58802893/230600988-3255baa6-8e69-4a84-9c26-42da2a6ad3a6.png" width="500" height="300" />
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+4. After clicking the 'edit' button, you can edit the given task and save it again.
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+Edit: 
 
-You will find all the required assets in the `/images` folder. The assets are already optimized.
+<img src="https://user-images.githubusercontent.com/58802893/230601175-a873322d-bee5-42b4-81e3-2ebbc08f253f.png" width="500" height="300" />
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+Save: 
 
-## Building your project
+<img src="https://user-images.githubusercontent.com/58802893/230601296-12cd86fc-8f06-43d2-bb48-61f7c094ae39.png" width="500" height="300" />
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+5.If you want to delete a task, just click the 'delete' button.
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+<img src="https://user-images.githubusercontent.com/58802893/230600712-f63a1f6a-973b-4e97-bc33-bbb24b59e3af.png" width="500" height="220" />
 
-## Deploying your project
-
-As mentioned above, there are many ways to host your project for free. Our recommend hosts are:
-
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
-
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
-
-## Create a custom `README.md`
-
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
-
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
-
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
-
-## Submitting your solution
-
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
-
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
-
-## Sharing your solution
-
-There are multiple places you can share your solution:
-
-1. Share your solution page in the **#finished-projects** channel of the [Slack community](https://www.frontendmentor.io/slack). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
-
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
-
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
-
-## Got feedback for us?
-
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
-
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
-
-**Have fun building!** 🚀
+### What was the biggest challenge? 🤯
+I think the biggest challenge was figuring out how it should work and look like, and then the design itself in CSS, because it took me a while. However, I am satisfied with the result, so now I can freely organize my duties 😃
