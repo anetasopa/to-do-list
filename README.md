@@ -40,9 +40,13 @@ Save:
 
 <img src="https://user-images.githubusercontent.com/58802893/230601296-12cd86fc-8f06-43d2-bb48-61f7c094ae39.png" width="500" height="300" />
 
-5.If you want to delete a task, just click the 'delete' button.
+5. If you want to delete a task, just click the 'delete' button.
 
 <img src="https://user-images.githubusercontent.com/58802893/230600712-f63a1f6a-973b-4e97-bc33-bbb24b59e3af.png" width="500" height="220" />
+
+6. You also can mark your task.
+
+<img src="https://user-images.githubusercontent.com/58802893/231712672-3bb6fdd2-1e41-401c-9963-feacf17427cf.png" width="500" height="220" />
 
 ### What was the biggest challenge? 🤯
 I think the biggest challenge was figuring out how it should work and look like, and then the design itself in CSS, because it took me a while. However, I am satisfied with the result, so now I can freely organize my duties 😃
