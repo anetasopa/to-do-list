@@ -13,20 +13,15 @@
   --darkGrayishBlue: hsl(236, 9%, 61%);
   --veryDarkGrayishBlue: hsl(235, 19%, 35%);
 
-  --brightBlue: hsl(220, 98%, 61%);
-  --checkBackground: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
-
-  --pink: #EC4899;
-  --purple: #8B5Cf6;
+  --pink: #ec4899;
+  --purple: #8b5cf6;
   --red: red;
   --white: white;
 }
 
-
 * {
   box-sizing: border-box;
   margin: 0;
-  font-family: Josefin Sans, sans-serif;
 }
 
 body {
@@ -36,6 +31,7 @@ body {
   background-color: var(--veryDarkBlue);
   font-size: 18px;
   color: var(--lightGrayishBlue);
+  font-family: Josefin Sans, sans-serif;
   min-height: 100vh;
 }
 
@@ -44,7 +40,7 @@ header {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
-  background-image: url('./images/bg-desktop-dark.jpg');
+  background-image: url("./Images/bg-desktop-dark.jpg");
 }
 
 header h1 {
@@ -71,8 +67,12 @@ img[alt="Sun"] {
 }
 
 @keyframes circle {
-    from { transform:rotate(-10deg); }
-    to { transform:rotate(10deg); }
+  from {
+    transform: rotate(-10deg);
+  }
+  to {
+    transform: rotate(10deg);
+  }
 }
 
 img[alt="Moon"] {
@@ -81,11 +81,16 @@ img[alt="Moon"] {
 }
 
 @keyframes circle2 {
-    from { transform:rotate(10deg); }
-    to { transform:rotate(-10deg); }
+  from {
+    transform: rotate(10deg);
+  }
+  to {
+    transform: rotate(-10deg);
+  }
 }
 
-input, button {
+input,
+button {
   appearance: none;
   border: none;
   outline: none;
@@ -96,7 +101,7 @@ input, button {
   display: flex;
 }
 
-#new-task-input {
+#list-form-input {
   flex: 1 1 0%;
   padding: 1rem;
   margin-right: 1rem;
@@ -106,11 +111,11 @@ input, button {
   font-size: 1.25rem;
 }
 
-#new-task-input::placeholder {
+#list-form-input::placeholder {
   color: var(--darkGrayishBlue);
 }
 
-#new-task-submit {
+#list-form-submit {
   color: pink;
   font-size: 1.25rem;
   font-weight: 700;
@@ -121,11 +126,11 @@ input, button {
   transition: 0.4s;
 }
 
-#new-task-submit:hover {
+#list-form-submit:hover {
   opacity: 0.8;
 }
 
-#new-task-submit:active {
+#list-form-submit:active {
   opacity: 0.6;
 }
 
@@ -137,18 +142,18 @@ main {
   margin: 0 auto;
 }
 
-.task-list {
+.container-list {
   padding: 1rem;
 }
 
-.task-list h2 {
+.container-list h2 {
   font-size: 1.5rem;
   font-weight: 300;
   color: var(--darkGrayishBlue);
   margin-bottom: 1rem;
 }
 
-#tasks .task {
+#lists .list {
   display: flex;
   justify-content: space-between;
   background-color: var(--veryDarkDesaturatedBlue);
@@ -158,32 +163,34 @@ main {
   margin-bottom: 1rem;
 }
 
-#tasks .task .content {
-  flex: 1 1 0%;
+#lists .list .content {
+  /* flex: 1 1 0%; */
+  display: inline-flex;
 }
 
-#tasks .task .content .text {
+#lists .list .content .text {
   color: var(--darkGrayishBlue);
   font-size: 1.125rem;
   width: 100%;
   display: block;
   transition: 0.4s;
+  cursor: pointer;
 }
 
-#tasks .task .content input {
+#lists .list .content input {
   background-color: var(--veryDarkDesaturatedBlue);
 }
 
-#tasks .task .content .text:not(:read-only) {
+#lists .list .content .text:not(:read-only) {
   color: var(--pink);
 }
 
-#tasks .task .actions {
+#lists .list .actions {
   display: flex;
   margin: 0 -0.5rem;
 }
 
-.task .actions button {
+.list .actions button {
   cursor: pointer;
   margin: 0 0.5rem;
   font-size: 1.125rem;
@@ -192,21 +199,32 @@ main {
   transition: 0.4s;
 }
 
-.task .actions button:hover {
+.list .actions button:hover {
   opacity: 0.8;
 }
 
-.task .actions button:active {
+.list .actions button:active {
   opacity: 0.6;
 }
 
-.task .actions .edit {
+.list .actions .edit {
   background-image: linear-gradient(to right, var(--pink), var(--purple));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.task .actions .delete {
+.list .actions .delete {
   background-color: var(--veryDarkDesaturatedBlue);
   color: var(--red);
+}
+
+.add {
+  color: var(--red);
+  font-size: 0.8rem;
+  margin-top: 5px;
+}
+
+.marked {
+  text-decoration: line-through;
+  cursor: pointer;
 }

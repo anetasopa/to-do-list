@@ -1,44 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="styles.css">
-  <title>Todo list app.</title>
-</head>
-<body>
-  <header>
-    <form id="new-task-form">
-      <div class="grid">
-        <h1>TO DO</h1>
-        <div>
-          <img src="./images/icon-sun.svg" alt="Sun" />
-          <img src="./images/icon-moon.svg" alt="Moon" />
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Todo list app.</title>
+  </head>
+  <body>
+    <header>
+      <form id="list-form">
+        <div class="grid">
+          <h1>TO DO</h1>
+          <div>
+            <img src="./Images/icon-sun.svg" alt="Sun" />
+            <img src="./Images/icon-moon.svg" alt="Moon" />
+          </div>
         </div>
-      </div>
-      <div class="flex">
-        <input
-          type="text"
-          id="new-task-input"
-          placeholder="What do you have planed to do?"
-        />
-        <input
-          type="submit"
-          id="new-task-submit"
-          value="Add task"
-        />
-      </div>
-    </form>
-  </header>
-  <main>
-    <section class="task-list">
-      <div id="tasks" draggable="true">
-
-        <!-- <div class="task">
+        <div class="flex">
+          <input
+            type="text"
+            id="list-form-input"
+            placeholder="What do you have planed to do?"
+          />
+          <input type="submit" id="list-form-submit" value="Add task" />
+        </div>
+      </form>
+    </header>
+    <main>
+      <section class="container-list">
+        <div id="lists" draggable="true">
+          <!-- <div class="list">
           <div class="content">
             <input
               type="text"
               class="text"
-              value="My task"
+              value="My list"
               readonly
             />
           </div>
@@ -47,10 +42,9 @@
             <button class="delete">Delete</button>
           </div>
         </div> -->
-
-      </div>
-    </section>
-  </main>
-  <script src="index.js"></script>
-</body>
+        </div>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
 </html>
