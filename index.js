@@ -1,4 +1,3 @@
-console.log("test");
 const form = document.getElementById("list-form");
 const input = document.getElementById("list-form-input");
 const lists = document.getElementById("lists");
@@ -74,6 +73,7 @@ window.addEventListener("load", () => {
       } else {
         to_do_input_el.setAttribute("readonly", "readonly");
         to_do_button_edit_el.innerText = "edit";
+        // Restore marked function
         to_do_input_el.addEventListener("click", markedToDo);
       }
     });
@@ -90,11 +90,5 @@ window.addEventListener("load", () => {
       to_do_input_el.classList.add("marked");
       to_do_action_el.removeChild(to_do_button_edit_el);
     }
-
-    // to_do_input_el.addEventListener("click", function () {
-    //   // When a to do is clicked, it will be marked
-    //   to_do_input_el.classList.add("marked");
-    //   to_do_action_el.removeChild(to_do_button_edit_el);
-    // });
   });
 });
