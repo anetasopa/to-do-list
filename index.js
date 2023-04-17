@@ -15,11 +15,10 @@ lists.addEventListener("click", (e) => {
   }
 
   // Check if button is edit
-  // if yes - then change the text to Save and text change is possible
+  // if yes - then change the text to Save and text change is possible and remove readonly attribute
   if (clickedEl.innerText.toLowerCase() === "edit") {
     const input = clickedEl.parentElement.previousElementSibling.children[0];
 
-    //Remove readonly attribute
     input.removeAttribute("readonly");
     input.focus();
     clickedEl.innerText = "Save";
@@ -27,6 +26,7 @@ lists.addEventListener("click", (e) => {
     return;
   }
 
+  // if the button is save then add readonly attribute
   if (clickedEl.innerText.toLowerCase() === "save") {
     const input = clickedEl.parentElement.previousElementSibling.children[0];
     const value = input.value;
