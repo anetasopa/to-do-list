@@ -2,6 +2,56 @@ const form = document.getElementById("list-form");
 const input = document.getElementById("list-form-input");
 const lists = document.getElementById("lists");
 
+lists.addEventListener("click", (e) => {
+  console.log(e);
+
+  const clickedEl = e.target;
+
+  const list = clickedEl.parentElement.parentElement;
+
+  if (clickedEl.innerText.toLowerCase() === "delete") {
+    lists.removeChild(list);
+    saveData();
+  }
+
+  // Check if button is edit
+  // if yes - then change the text to Save and text change is possible
+  if (clickedEl.innerText.toLowerCase() === "edit") {
+    const input = clickedEl.parentElement.previousElementSibling.children[0];
+
+    //Remove readonly attribute
+    input.removeAttribute("readonly");
+    input.focus();
+    clickedEl.innerText = "Save";
+
+    return;
+  }
+
+  if (clickedEl.innerText.toLowerCase() === "save") {
+    const input = clickedEl.parentElement.previousElementSibling.children[0];
+    const value = input.value;
+
+    input.value = value;
+    input.defaultValue = value;
+    input.setAttribute("readonly", "readonly");
+    clickedEl.innerText = "edit";
+    saveData();
+  }
+
+  // I clicked input fiels in a todo row
+  if (clickedEl.classList.contains("todo-text")) {
+    const editButton = clickedEl.parentElement.nextElementSibling.children[0];
+
+    if (editButton.innerHTML.toLowerCase() === "edit") {
+      if (clickedEl.classList.contains("marked")) {
+        clickedEl.classList.remove("marked");
+      } else {
+        clickedEl.classList.add("marked");
+      }
+    }
+  }
+});
+
 window.addEventListener("load", () => {
   // Add action to form (create a tasks)
   form.addEventListener("submit", (e) => {
@@ -28,14 +78,14 @@ window.addEventListener("load", () => {
 
     // Add input to content div
     const to_do_input_el = document.createElement("input");
-    to_do_input_el.classList.add("text");
+    to_do_input_el.classList.add("text", "todo-text");
     to_do_input_el.type = "text";
     to_do_input_el.value = list;
-    // 'readonly' - default input
+    to_do_input_el.defaultValue = list;
     to_do_input_el.setAttribute("readonly", "readonly");
     to_do_content_el.appendChild(to_do_input_el);
 
-    // Add action div of task
+    //Add action div of task
     const to_do_action_el = document.createElement("div");
     to_do_action_el.classList.add("actions");
 
@@ -44,6 +94,7 @@ window.addEventListener("load", () => {
     // Add button edit to action div
     const to_do_button_edit_el = document.createElement("button");
     to_do_button_edit_el.classList.add("edit");
+    // to_do_button_edit_el.dataset.id = id;
     to_do_button_edit_el.innerHTML = "Edit";
 
     // Add button delete to action div
@@ -59,36 +110,16 @@ window.addEventListener("load", () => {
 
     input.value = "";
 
-    to_do_button_edit_el.addEventListener("click", () => {
-      e.preventDefault();
-
-      // Check if button is edit
-      // if yes - then change the text to Save and text change is possible
-      if (to_do_button_edit_el.innerText.toLowerCase() === "edit") {
-        // Remove marked function
-        to_do_input_el.removeEventListener("click", markedToDo);
-        to_do_input_el.removeAttribute("readonly");
-        to_do_input_el.focus();
-        to_do_button_edit_el.innerText = "Save";
-      } else {
-        to_do_input_el.setAttribute("readonly", "readonly");
-        to_do_button_edit_el.innerText = "edit";
-        // Restore marked function
-        to_do_input_el.addEventListener("click", markedToDo);
-      }
-    });
-
-    to_do_button_delete_el.addEventListener("click", () => {
-      // Remove the task
-      lists.removeChild(to_do_el);
-    });
-
-    to_do_input_el.addEventListener("click", markedToDo);
-
-    function markedToDo() {
-      // When a to do is clicked, it will be marked
-      to_do_input_el.classList.add("marked");
-      to_do_action_el.removeChild(to_do_button_edit_el);
-    }
+    saveData();
   });
 });
+
+function saveData() {
+  localStorage.setItem("data", lists.innerHTML);
+}
+
+function showTask() {
+  lists.innerHTML = localStorage.getItem("data");
+}
+
+showTask();
