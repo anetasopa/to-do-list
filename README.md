@@ -51,4 +51,6 @@ Save:
 ### What was the biggest challenge? 🤯
 I think the biggest challenge was figuring out how it should work and look like, and then the design itself in CSS, because it took me a while. However, I am satisfied with the result, so now I can freely organize my duties 😃
 
-##### You can also see this application at this [link](https://codesandbox.io/s/todo-list-forked-t9nvhs?file=/index.html).
+##### You can also see this application at this [link](https://codesandbox.io/s/todo-list-1-forked-t9nvhs?file=/index.js).
+
+
