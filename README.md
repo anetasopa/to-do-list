@@ -4,23 +4,23 @@
 
 ### Why Todo list? ❓ ❓
 
-I know that the Todo List app is very popular but I am a person who likes to have an organized space and my. So I thought I'd write my own Todo List app and use it personally, and maybe to help others sort out their daily schedules.
+I know that the Todo List app is very popular but I am a person who likes to have an organized space around and plan. So I thought I'd write my own Todo List app and use it personally, and maybe to help others sort out their daily schedules.
 
 The project is based on the challenge from [Frontend Mentor](https://www.frontendmentor.io/) app which helped me improve my coding skills by building realistic projects. I have chosen the 'Todo app (INTERMEDIATE)' application, created in HTML, CSS and Java Script.
 
-This is very cool 👌  because it doen't provide a solution or code on how the application should be written. You have to build out and get it looking as close to the design they give you as possible. You can use the tools which you like to complete the challenge. You also are able to add some of your own suggestions of the code. 
+It's cool 👌  because it doen't provide a solution or code on how the application should be written. You have to build out and get it looking as close to the design they give you as possible. You can use the tools which you like to complete the challenge. You also are able to add some of your own suggestions of the code. 
 
 ### How do i start the project? 🧐
 
 * Before writing any code, I went through the project to start planning how to deal with it. This step helped me think ahead about CSS classes to create, for example, reusable styles.
 * I wrote HTML structure and organized, which helped me focus more on creating well-structured content.
 * I moved on to styling in CSS, including general content styles.
-* then I went back to HTML to come up with this code that displays the task list
-* I moved on to writing Java Script and all the functionality of this application
+* Then I went back to HTML to come up with this code that displays the task list.
+* I moved on to writing Java Script and all the functionality of this application.
 
 ### How is it work? 🤔
 
-1. Input and button are displayed on the main page (you can see it in the picture above).
+1. Input and text button are displayed on the main page (you can see it in the picture above).
 
 2. After entering the value in input and clicking the button, the value (todo list) will be displayed below.
 
@@ -49,6 +49,7 @@ Save:
 <img src="https://user-images.githubusercontent.com/58802893/231712672-3bb6fdd2-1e41-401c-9963-feacf17427cf.png" width="500" height="220" />
 
 ### What was the biggest challenge? 🤯
+
 I think the biggest challenge was figuring out how it should work and look like, and then the design itself in CSS, because it took me a while. However, I am satisfied with the result, so now I can freely organize my duties 😃
 
 ##### You can also see this application at this [link](https://codesandbox.io/s/todo-list-forked-re7u4i?file=/index.html).
